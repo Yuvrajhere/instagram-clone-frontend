@@ -1,0 +1,161 @@
+.HomeInfo {
+  padding: 3% 12%;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.HomeInfo main {
+  justify-content: center;
+}
+
+.HomeInfo main > div {
+  width: 454px;
+  height: 618px;
+  background: url("../../assets/device-frame.png") no-repeat;
+}
+
+#showcase-img {
+  transition: all 0.5s ease;
+}
+
+.hide-image {
+  display: none;
+}
+
+.HomeInfo main > div > img {
+  margin: 99px 0 0 151px;
+  animation: fadeIn 4s linear;
+}
+
+@keyframes fadeIn {
+  0%,100% {opacity:0.5;}
+  30%,80% {opacity:1;}
+}
+
+.HomeInfo main section {
+  max-width: 350px;
+}
+
+.HomeInfo form {
+  background-color: #ffffff;
+  border: 1px solid #cacaca;
+  padding: 20px 30px;
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+.HomeInfo form h1{
+  font-family: 'Grand Hotel', cursive;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.HomeInfo form > div {
+  position: relative;
+  width: 100%;
+  background-color: #f8f8f8;
+  border: 1px solid #cacaca;
+  margin-bottom: 5px;
+}
+
+.HomeInfo form div label {
+  padding: 0 10px;
+  position: absolute;
+  font-size: 16px;
+  color: #333333;
+  display: flex;
+  transform-origin: top left;
+  transform: translate(0, 12px) scale(1);
+  transition: all .1s ease-in-out;
+}
+
+.HomeInfo form div input {
+  width: 100%;
+  background-color: #f8f8f8;
+  border: none;
+  padding: 16px 0 10px 10px;
+  font-size: 16px;
+}
+
+.HomeInfo form input:focus {
+  outline: none;
+}
+
+.HomeInfo form div.active label {
+  transform: translate(0, 2px) scale(.75);
+}
+
+.HomeInfo form button {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: #0095f6;
+  border: none;
+  padding: 8px;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.HomeInfo form .fb-login-link {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #3b5998;
+}
+
+.HomeInfo form a {
+  font-weight: 300;
+}
+
+.HomeInfo section > p {
+  background-color: #ffffff;
+  border: 1px solid #cacaca;
+  padding: 20px 30px;
+  width: 350px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.HomeInfo section > p > a {
+  font-size: 0.9rem;
+  color: #0095f6;
+}
+
+.HomeInfo article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.HomeInfo article > p {
+  margin: 16px auto;
+}
+
+.HomeInfo article > div {
+  display: flex;
+  justify-content: center;
+}
+
+.HomeInfo article > div > img {
+  width: 40%;
+  cursor: pointer;
+}
+
+.HomeInfo article > div > img:nth-child(1) {
+  margin-right: 10px;
+}
+
+.HomeInfo footer {
+  text-transform: uppercase;
+}
+
+.HomeInfo footer ul {
+  width: 55%;
+}
+
+.HomeInfo footer p {
+  color: gray;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
