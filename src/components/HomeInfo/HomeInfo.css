@@ -67,14 +67,16 @@
   transform-origin: top left;
   transform: translate(0, 12px) scale(1);
   transition: all .1s ease-in-out;
+  cursor: text;
 }
 
 .HomeInfo form div input {
+  color: #333333;
   width: 100%;
   background-color: #f8f8f8;
   border: none;
-  padding: 16px 0 10px 10px;
-  font-size: 16px;
+  padding: 16px 0 10px 8px;
+  font-size: 14px;
 }
 
 .HomeInfo form input:focus {
@@ -83,6 +85,13 @@
 
 .HomeInfo form div.active label {
   transform: translate(0, 2px) scale(.75);
+}
+
+.HomeInfo form > div > .password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
 }
 
 .HomeInfo form button {
